@@ -1,0 +1,46 @@
+<%- include('header') %>
+
+<div class="container">
+	<div class="row justify-content-start mt-5 " style="border-style: solid;
+	border-color: black;padding: 5px;">
+	  <div class="col-6 ">
+		<form class="pure-form pure-form-stacked" method="GET" action="/convert">
+			<table>
+				<tr>
+					<td>Convert From</td>
+					<td><input id="cfrom" name="cfrom" placeholder="convert from"  required /></td>
+				</tr>
+				<tr>
+					<td>Convert To</td>
+					<td><input id="cto" name="cto" placeholder="convert to"  required /></td>
+				</tr>
+				<tr>
+					<td>Amount</td>
+					<td><input id="amount" name="amount" placeholder="amount"  required /></td>
+				</tr>
+				
+				<tr>
+					<td>	<button id="convert" class="btn btn-success" >Convert</button></td>
+					<% if(amount_) { %>
+					<td><%= amount_ %></td>
+					<% } %>
+				</tr>
+			</table>		
+		</form>
+	  </div>
+	  <div class="col-6">
+		<table>
+			<th>Currency History</th>			
+			<% for(let count = 0; count < list1.length; count++ ){ %>
+				<tr><td><%=list1[count] %></td></tr>
+			<% } %>
+			
+		</table>
+	  </div>
+	</div>
+</div>
+
+
+
+
+<%- include('footer') %>

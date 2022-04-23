@@ -1,0 +1,37 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+input,
+button {
+  border: 1px solid #9fa19b;
+  margin: 8px 0;
+  padding: 10px 15px;
+  display: block;
+}
+
+input {
+  border: 1px solid #9fa19b;
+  margin: 8px 0;
+  padding: 10px 15px;
+  display: block;
+}
+
+input {
+  font-size: 18px;
+  background: #fdfdfd;
+}
+
+.pure-button {
+  text-transform: uppercase; 
+  width: 100%;
+}
+
+strong {
+  font-size: 22px;
+}
